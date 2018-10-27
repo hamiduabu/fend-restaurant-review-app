@@ -46,7 +46,9 @@ To run this project locally
 
 - With your server running, visit the site: `http://localhost:8000` in Chrome or in your preferred browser.
 
-
+## References
+- Udacity's [Offline Web Applications Course](https://www.udacity.com/course/offline-web-applications--ud899)
+- Project [resources](https://www.diigo.com/outliner/fjslyn/Udacity-Restaurant-Reviews-App-(project-%235)?key=zqiopam1yz) on diigo
 
 ## License
 
