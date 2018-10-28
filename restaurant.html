@@ -16,8 +16,8 @@
   <!-- Beginning header -->
   <header>
     <!-- Beginning nav -->
-    <nav>
-      <h1><a aria-label="Go to home" href="/">Restaurant Reviews</a></h1>
+    <h1><a aria-label="Go to home" href="/">Restaurant Reviews</a></h1>
+    <nav aria-label="Breadcrumb">
       <!-- Skip Links -->
       <a href="#restaurant-name" class="skip-link">Skip to main content</a>
       <!-- Beginning breadcrumb -->
@@ -33,13 +33,13 @@
   <!-- Beginning main -->
   <main id="maincontent">
     <!-- Beginning map -->
-    <section aria-label="Maps" id="map-container">
+    <section role="application" aria-label="Maps" id="map-container">
       <div id="map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section role="contentinfo" aria-label="Restaurant information" id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
+      <h2 id="restaurant-name"></h2>
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
       <p id="restaurant-address"></p>

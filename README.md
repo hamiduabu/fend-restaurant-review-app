@@ -49,6 +49,7 @@ To run this project locally
 ## References
 - Udacity's [Offline Web Applications Course](https://www.udacity.com/course/offline-web-applications--ud899)
 - Project [resources](https://www.diigo.com/outliner/fjslyn/Udacity-Restaurant-Reviews-App-(project-%235)?key=zqiopam1yz) on diigo
+- Google Web Fundamentals - [Service Workers: An Introduction](https://developers.google.com/web/fundamentals/primers/service-workers/)
 
 ## License
 
