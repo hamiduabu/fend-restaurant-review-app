@@ -1,5 +1,4 @@
 const staticCacheName = 'restaurant-v1';
-
 // Install service worker and cache URLs
 self.addEventListener('install', event => {
   const urlsToCache = [
@@ -30,7 +29,6 @@ self.addEventListener('install', event => {
     })
   );
 });
-
 // Activate service worker
 // and delete old cache where applicable
 self.addEventListener('activate', event => {
@@ -51,14 +49,21 @@ self.addEventListener('activate', event => {
     })
   );
 });
-
 // fetch urls from cache (when available)
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request).then(response => {
-      if (response) return response;
-      return fetch(event.request).then(response => {
-        return caches.open(staticCacheName).then(cache => {
+      if (response) {
+        return response;
+      }
+      let fetchRequest = event.request.clone();
+      return fetch(fetchRequest).then(function(response) {
+        // Check if we received a valid response
+        // https://developers.google.com/web/fundamentals/primers/service-workers/
+        if (!response || response.status !== 200 || response.type !== 'basic') {
+          return response;
+        }
+        caches.open(staticCacheName).then(cache => {
           cache.put(event.request, response.clone());
           return response;
         });
