@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project converts a static webpage that lacks accessibility and converts the design to be responsive and accessible for screen reader use. A service worker is used to create a seamless offline experience.
+This project converts an unresponsive static webpage that lacks accessibility to be responsive and accessible for screen reader use. A service worker is used to create a seamless offline experience.
 
 
 
