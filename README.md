@@ -22,7 +22,7 @@ The starter code for this project can be found [here](https://github.com/udacity
 
 
 ## To access the project
-To access this project online, please click **[here:](https://hamiduabu.github.io/fend-feedreader-test/)**
+To access this project online, please click **[here:](https://hamiduabu.github.io/fend-restaurant-review-app/)**
 
 To run this project locally
 - Clone or download this repository
